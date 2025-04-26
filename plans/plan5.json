@@ -1,0 +1,55 @@
+{
+    "day 1": {
+        "optional": "0",
+        "title": "Upper Body Strength",
+        "warmup": {"duration": "5-10", "exercises": ["light cardio", "dynamic stretches for upper body"]},
+        "1": {"exercise": "Dumbbell Chest Press", "sets": "3", "reps": "10-12"},
+        "2": {"exercise": "Lat Pulldown", "sets": "3", "reps": "10-12"},
+        "3": {"exercise": "Seated Dumbbell Shoulder Press", "sets": "3", "reps": "10-12"},
+        "4": {"exercise": "Dumbbell Rows", "sets": "3", "reps": "10-12 (each arm)"},
+        "5": {"exercise": "Tricep Extensions", "sets": "3", "reps": "12-15"},
+        "6": {"exercise": "Bicep Curls", "sets": "3", "reps": "12-15"}
+    },
+    "day 2": {
+        "optional": "0",
+        "title": "Lower Body Strength",
+        "warmup": {"duration": "5-10", "exercises": ["light cardio", "dynamic stretches for lower body"]},
+        "1": {"exercise": "Goblet Squats", "sets": "4", "reps": "10-12"},
+        "2": {"exercise": "Glute Bridge or Hip Thrust", "sets": "4", "reps": "10-12"},
+        "3": {"exercise": "Leg Press", "sets": "3", "reps": "10-12"},
+        "4": {"exercise": "Lateral Lunges", "sets": "3", "reps": "10-12 (each leg)"},
+        "5": {"exercise": "Calf Raises", "sets": "4", "reps": "15-20"},
+        "6": {"exercise": "Russian Twists", "sets": "3", "reps": "15-20 (each side)"}
+    },
+    "day 3": {
+        "optional": "0",
+        "title": "Full Body Functional Movements",
+        "warmup": {"duration": "5-10", "exercises": ["light cardio", "full-body dynamic stretches"]},
+        "1": {"exercise": "Deadlifts (light to moderate)", "sets": "3", "reps": "8-10"},
+        "2": {"exercise": "Kettlebell Swings", "sets": "3", "reps": "12-15"},
+        "3": {"exercise": "Step-Ups", "sets": "3", "reps": "10-12 (each leg)"},
+        "4": {"exercise": "Chest Supported Row", "sets": "3", "reps": "10-12"},
+        "5": {"exercise": "Mountain Climbers", "sets": "3", "duration": "30-45 seconds"},
+        "6": {"exercise": "Bicycle Crunches", "sets": "3", "reps": "15-20 (each side)"}
+    },
+    "day 4": {
+        "optional": "1",
+        "title": "Active Recovery & Core",
+        "warmup": {"duration": "5-10", "exercises": ["light cardio", "mobility stretches"]},
+        "1": {"exercise": "Plank", "sets": "3", "duration": "30-60 seconds"},
+        "2": {"exercise": "Side Plank", "sets": "3", "duration": "30-45 seconds each side"},
+        "3": {"exercise": "Bird Dogs", "sets": "3", "reps": "10-12 (each side)"},
+        "4": {"exercise": "Foam Rolling", "sets": "1", "duration": "5-10 minutes"},
+        "5": {"exercise": "Yoga or Stretching Routine", "duration": "15-20 minutes"}
+    },
+    "day 5": {
+        "optional": "0",
+        "title": "Upper & Lower Compound Movements",
+        "warmup": {"duration": "5-10", "exercises": ["light cardio", "dynamic stretches for whole body"]},
+        "1": {"exercise": "Incline Dumbbell Press", "sets": "3", "reps": "10-12"},
+        "2": {"exercise": "Leg Curl Machine", "sets": "3", "reps": "12-15"},
+        "3": {"exercise": "Cable Rows", "sets": "3", "reps": "10-12"},
+        "4": {"exercise": "Bulgarian Split Squats", "sets": "3", "reps": "10-12 (each leg)"},
+        "5": {"exercise": "Face Pulls", "sets": "3", "reps": "12-15"}
+    }
+}

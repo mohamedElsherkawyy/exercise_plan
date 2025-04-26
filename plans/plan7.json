@@ -1,0 +1,43 @@
+{
+    "day 1": {
+        "optional": "0",
+        "title": "Full-Body Strength",
+        "warmup": {"duration": "5-10", "exercises": ["dynamic stretching", "light cardio"]},
+        "1": {"exercise": "Dumbbell Goblet Squats", "sets": "4", "reps": "10-12"},
+        "2": {"exercise": "Weighted Push-Ups", "sets": "4", "reps": "8-10"},
+        "3": {"exercise": "Dumbbell Rows", "sets": "4", "reps": "10-12"},
+        "4": {"exercise": "Lunges", "sets": "3", "reps": "10-12 (each leg)"},
+        "6": {"exercise": "Dumbbell Glute Bridges", "sets": "3", "reps": "12-15"} 
+    },
+    "day 2": {
+        "optional": "0",
+        "title": "Upper Body Strength",
+        "warmup": {"duration": "5-10", "exercises": ["dynamic stretches", "arm circles"]},
+        "1": {"exercise": "Dumbbell Bench Press", "sets": "4", "reps": "10-12"},
+        "2": {"exercise": "Lat Pulldown", "sets": "4", "reps": "10-12"},
+        "3": {"exercise": "Barbell Overhead Press", "sets": "3", "reps": "10-12"},
+        "4": {"exercise": "Bicep Curls", "sets": "3", "reps": "12-15"},
+        "5": {"exercise": "Tricep Extensions", "sets": "3", "reps": "12-15"},
+        "6": {"exercise": "Inclined Weighted Situps", "sets": "3", "reps": "15-20"}
+    },
+    "day 3": {
+        "optional": "0",
+        "title": "Lower Body Strength",
+        "warmup": {"duration": "5-10", "exercises": ["dynamic leg swings", "light cardio"]},
+        "1": {"exercise": "Barbell Squats", "sets": "4", "reps": "8-10"},
+        "2": {"exercise": "Deadlifts", "sets": "4", "reps": "8-10"},
+        "3": {"exercise": "Leg Press", "sets": "3", "reps": "10-12"},
+        "4": {"exercise": "Hamstring Curls", "sets": "3", "reps": "10-12"},
+        "5": {"exercise": "Calf Raises", "sets": "4", "reps": "15-20"}
+    },
+    "day 4": {
+        "optional": "0",
+        "title": "Full Body Strength & Conditioning",
+        "warmup": {"duration": "5-10", "exercises": ["dynamic stretches", "full-body movements"]},
+        "1": {"exercise": "Kettlebell Swings", "sets": "4", "reps": "10-15"},
+        "2": {"exercise": "Dumbbell Bench Press", "sets": "4", "reps": "8-12"},
+        "3": {"exercise": "Barbell Rows", "sets": "4", "reps": "8-12"},
+        "4": {"exercise": "Dumbbell Goblet Squats", "sets": "4", "reps": "10-12"},
+        "5": {"exercise": "Face Pulls", "sets": "3", "reps": "15"}
+    }
+}
