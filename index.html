@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ML Plan Predictor</title>
+</head>
+<body>
+  <h1>Fitness Plan Predictor</h1>
+  <form id="predictForm">
+    <input type="number" id="weight" placeholder="Weight (kg)" required />
+    <input type="number" id="height" placeholder="Height (m)" required />
+    <input type="number" id="bmi" placeholder="BMI" required />
+    <input type="number" id="bodyFat" placeholder="Body Fat (%)" required />
+    <input type="number" id="age" placeholder="Age" required />
+    <select id="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <button type="submit">Get Plan</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script>
+    document.getElementById("predictForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const payload = {
+        weight: parseFloat(document.getElementById("weight").value),
+        height: parseFloat(document.getElementById("height").value),
+        bmi: parseFloat(document.getElementById("bmi").value),
+        body_fat_percentage: parseFloat(document.getElementById("bodyFat").value),
+        age: parseFloat(document.getElementById("age").value),
+        gender: document.getElementById("gender").value
+      };
+
+      const response = await fetch("http://localhost:8000/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json();
+      document.getElementById("output").textContent = JSON.stringify(result, null, 2);
+    });
+  </script>
+</body>
+</html>

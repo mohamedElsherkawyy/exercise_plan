@@ -5,9 +5,20 @@ import numpy as np
 import pickle
 import pandas as pd
 from pymongo import MongoClient
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
 
-with open("xgboost_classifier_model.pkl", "rb") as f:
+# Add this block to enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+with open("xgboost_regressor_model.pkl", "rb") as f:
     classifier = pickle.load(f)
 
 with open("scaler.pkl", "rb") as f:
@@ -26,8 +37,9 @@ def preprocess_input(data: dict):
     # Encode gender
     gender_map = {'male': 1, 'female': 0}
     gender_encoded = gender_map.get(gender.lower(), 0)  # Make sure gender is lowercase
-    # Scale features
-    features = [[weight, height, bmi, body_fat_percentage, age]]
+    # Scale features using DataFrame with column names
+    feature_names = ['Weight', 'Height', 'BMI', 'Body Fat Percentage', 'Age']
+    features = pd.DataFrame([[weight, height, bmi, body_fat_percentage, age]], columns=feature_names)
     features_scaled = scaler.transform(features)[0]
     # Create final input list
     input_data = list(features_scaled)[:4] + [gender_encoded, features_scaled[4]]
