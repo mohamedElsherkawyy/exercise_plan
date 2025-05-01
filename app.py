@@ -78,5 +78,5 @@ def predict_plan(data: UserInfo):
 def shutdown_db_client():
     client.close()
 
-# if __name__ == '__main__':
-#     uvicorn.run(app, host='0.0.0.0', port=8000)
+if __name__ == '__main__':
+    uvicorn.run(app, host='0.0.0.0', port=8000)
